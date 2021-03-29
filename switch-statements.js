@@ -2,7 +2,7 @@
 // Opdracht 1: schrijf een switch statement die op basis van de volgende variabele een bijbehorende foutmelding in de console logt.
 // ==========================================
 
-const errorCode = 0;
+const errorCode = 3;
 
 // Je mag ervanuit gaan dat deze variabele altijd een waarde tussen de 0 en de 4 bevat. Deze codes hebben de volgende betekenissen (foutmeldingen):
 // 0: "Geen watertoevoer"
@@ -15,7 +15,23 @@ const errorCode = 0;
 // const errorCode = 0 geeft "Geen watertoevoer" in de terminal
 // const errorCode = 4 geeft "Geen druk" in de terminal
 // etc.
-
+switch (errorCode){
+    case 0:
+        console.log("Geen watertoevoer");
+        break;
+    case 1:
+        console.log("Temperatuur te laag");
+            break;
+    case 2:
+        console.log("Koffiebonen op");
+        break;
+    case 3:
+        console.log("Afvalbak vol");
+        break;
+    case 4:
+        console.log("Geen druk");
+        break;
+}
 
 // ==========================================
 // Opdracht 2: schrijf een switch statement die op basis van de volgende variabele een bijbehorende foutmelding in de console logt.
@@ -23,6 +39,23 @@ const errorCode = 0;
 
 const monitorColor = "red";
 
+switch (monitorColor){
+    case "green":
+        console.log("Hartslag stabiel");
+        break;
+    case "yellow":
+        console.log("Hartslag verhoogd");
+        break;
+    case "orange":
+        console.log("Kritieke hartslag, actie vereis!");
+        break;
+    case "red":
+        console.log("Kritieke hartslag, actie vereis!");
+        break;
+        default:
+            console.log("Hartslag onbekend")
+
+}
 // Deze variabele zal altijd een kleur bevatten. De specifieke kleuren waar een melding bij gemaakt moet worden zijn: "red", "green", "yellow" en "orange".
 // Deze codes zijn gelinkt aan de volgende meldingen:
 // "green": "Hartslag stabiel"
